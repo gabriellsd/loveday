@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luana & Gabriel ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Corações flutuantes em toda a página -->
+    <div class="floating-hearts">
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart"></i>
+    </div>
+
+    <!-- Cursor personalizado -->
+    <div class="custom-cursor"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="main-title">Luana & Gabriel</h1>
+            <div class="love-stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="yearsMonthsDays">0 anos, 0 meses e 0 dias</span>
+                    <span class="stat-label">Juntos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Nível de Amor</span>
+                </div>
+            </div>
+            <p class="poetic-phrase">Cada dia ao seu lado é um novo capítulo da nossa história.</p>
+        </div>
+    </header>
+
+    <!-- Frase do Dia -->
+    <section class="daily-quote-section">
+        <div class="container">
+            <h2>Frase do Dia</h2>
+            <div class="daily-quote-card">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p id="dailyQuote" class="daily-quote-text"></p>
+                <i class="fas fa-quote-right quote-icon"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossa Música -->
+    <section class="music-section">
+        <div class="container">
+            <h2>Nossa Música</h2>
+            <div class="music-player">
+                <div class="music-info">
+                    <h3>Chariot - Jacob Lee</h3>
+                    <p class="music-description">
+                        Esta música se tornou nossa porque cada verso parece contar nossa história. Desde os olhos que me encantam, 
+                        até o jeito que nossos dedos se entrelaçam. Mas principalmente pelo refrão que diz "Eu pretendo te amar por toda a minha vida", 
+                        porque é exatamente assim que me sinto. Cada vez que ouço, me apaixono de novo, como a letra diz.
+                    </p>
+                </div>
+                <div class="music-controls">
+                    <button class="music-btn" id="playBtn">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <div class="music-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <div class="time-display">
+                            <span id="currentTime">0:00</span>
+                            <span id="totalTime">0:00</span>
+                        </div>
+                    </div>
+                </div>
+                <audio id="audioPlayer" preload="auto" playsinline>
+                    <source src="musicas/Jacob Lee - Chariot (Official Audio).mp3" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Fotos -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2>Nossa Viagem a Gramado ❤️</h2>
+            <p class="gallery-description">Momentos especiais que vivemos juntos nesse lugar mágico</p>
+            <div class="frame-container">
+                <div class="frame">
+                    <div class="frame-inner">
+                        <img id="currentImage" src="fotos/Viagem Gramado/3.jpg" alt="Foto da viagem">
+                        <video id="currentVideo" style="display: none;" muted playsinline loop>
+                            <source src="" type="video/mp4">
+                            Seu navegador não suporta vídeos.
+                        </video>
+                        <div class="video-controls" style="display: none;">
+                            <button class="video-play-btn" id="videoPlayBtn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <span class="video-time" id="videoTime">0:00 / 0:00</span>
+                        </div>
+                    </div>
+                    <div class="frame-corners">
+                        <div class="corner top-left"></div>
+                        <div class="corner top-right"></div>
+                        <div class="corner bottom-left"></div>
+                        <div class="corner bottom-right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mensagem Especial -->
+    <section class="message-section">
+        <div class="container">
+            <div class="message-card">
+                <h2>Para Minha Luana ❤️</h2>
+                <p class="message-text">
+                    Luana, você é o amor da minha vida. Cada dia ao seu lado é um presente que eu agradeço todos os dias. 
+                    Nossa história é apenas o começo de algo que vai durar para sempre.
+                </p>
+                <p class="message-text">
+                    Você me faz sorrir todos os dias, me apoia em todos os momentos e me ama de uma forma que eu nunca imaginei ser possível.
+                    Sou muito feliz por ter você na minha vida e não posso esperar para construir um futuro ainda mais lindo ao seu lado.
+                </p>
+                <p class="message-signature">
+                    Com todo o meu amor,<br>
+                    Para sempre seu ❤️
+                </p>
+                <div class="love-meter">
+                    <div class="meter-label">Nível de Amor</div>
+                    <div class="meter-bar">
+                        <div class="meter-fill" style="width: 100%"></div>
+                    </div>
+                    <div class="meter-value">100%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para detalhes dos lugares -->
+    <div class="modal" id="placeModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Conteúdo será preenchido dinamicamente -->
+            </div>
+        </div>
+    </div>
+
+    <audio id="backgroundMusic" loop>
+        <source src="musicas/Jacob Lee - Chariot (Official Audio).mp3" type="audio/mp3">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html> 
